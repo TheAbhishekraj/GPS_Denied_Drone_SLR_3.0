@@ -1,0 +1,112 @@
+CHECKPOINT 2 — Classification Summary
+============================================================
+Date: 2026-07-12
+Input: database_final.csv
+Output: classified_papers.csv
+
+Total papers: 995
+Papers with ≥1 sensor:      776  (78.0%)
+Papers with ≥1 algorithm:   535  (53.8%)
+Papers with ≥1 application: 995  (100.0%)
+Papers with ≥1 environment: 667  (67.0%)
+Papers with ≥1 dataset:     84  (8.4%)
+SENSOR Distribution (sorted by frequency):
+Category                        Count       %
+------------------------------  -----  ------
+Camera                            402   40.4%
+IMU                               333   33.5%
+GNSS/GPS                          321   32.3%
+Radar                             194   19.5%
+LiDAR                             187   18.8%
+Monocular                          91    9.1%
+WiFi                               72    7.2%
+UWB                                68    6.8%
+Wheel Encoder                      51    5.1%
+RGB-D                              32    3.2%
+BLE/Bluetooth                      27    2.7%
+Stereo                             23    2.3%
+Ultrasonic                         21    2.1%
+Magnetometer                       15    1.5%
+Barometer                          11    1.1%
+DVL                                 8    0.8%
+Event Camera                        6    0.6%
+Thermal                             2    0.2%
+ALGORITHM Distribution (sorted by frequency):
+Category                        Count       %
+------------------------------  -----  ------
+Visual-Inertial Odometry          139   14.0%
+Visual Odometry                   128   12.9%
+EKF                               119   12.0%
+Deep Learning                     119   12.0%
+Particle Filter                    65    6.5%
+Factor Graph                       45    4.5%
+UKF                                27    2.7%
+VINS                               26    2.6%
+Optical Flow                       19    1.9%
+Bundle Adjustment                  15    1.5%
+ICP                                14    1.4%
+LOAM                               13    1.3%
+MSCKF                              10    1.0%
+Pose Graph                          8    0.8%
+ORB-SLAM                            7    0.7%
+NDT                                 7    0.7%
+LIO-SAM                             2    0.2%
+GTSAM                               2    0.2%
+iSAM                                1    0.1%
+APPLICATION Distribution (sorted by frequency):
+Category                        Count       %
+------------------------------  -----  ------
+Generic/Other                     394   39.6%
+Spacecraft                        235   23.6%
+Multi-Robot/Swarm                 165   16.6%
+UAV/Drone                         129   13.0%
+UGV                               111   11.2%
+Inspection                         84    8.4%
+Pedestrian/PDR                     54    5.4%
+Autonomous Car                     35    3.5%
+AUV/Underwater                     33    3.3%
+Search & Rescue                    31    3.1%
+Indoor Robot                       21    2.1%
+Agricultural                        6    0.6%
+ENVIRONMENT Distribution (sorted by frequency):
+Category                        Count       %
+------------------------------  -----  ------
+Indoor                            281   28.2%
+Simulation                        197   19.8%
+Real-World                        184   18.5%
+Outdoor                           150   15.1%
+Urban                             118   11.9%
+Underwater                         34    3.4%
+Tunnel/Underground                 23    2.3%
+Forest/Vegetation                  19    1.9%
+DATASET Distribution (sorted by frequency):
+Category                        Count       %
+------------------------------  -----  ------
+KITTI                              44    4.4%
+Custom/Own                         23    2.3%
+EuRoC                              17    1.7%
+TUM                                 8    0.8%
+MulRan                              3    0.3%
+Oxford RobotCar                     3    0.3%
+Newer College                       2    0.2%
+KAIST                               2    0.2%
+OpenLORIS                           1    0.1%
+NCLT                                1    0.1%
+
+
+SENSOR CO-OCCURRENCE (top pairs):
+  Camera + IMU: 206
+  GNSS/GPS + IMU: 159
+  Camera + GNSS/GPS: 150
+  LiDAR + Radar: 142
+  IMU + LiDAR: 103
+  IMU + Radar: 94
+  Camera + Monocular: 90
+  GNSS/GPS + LiDAR: 81
+  GNSS/GPS + Radar: 81
+  Camera + LiDAR: 69
+  Camera + Radar: 59
+  IMU + Monocular: 50
+  GNSS/GPS + UWB: 36
+  IMU + Wheel Encoder: 35
+  IMU + UWB: 31

@@ -1,0 +1,41 @@
+=================================================================
+  Accuracy Extraction Summary
+=================================================================
+Total papers analysed       : 995
+Papers with accuracy data   : 44 (4.4%)
+
+Distance-based accuracy (metres):
+  Count  : 41
+  Min    : 0.0050 m
+  Max    : 20.0000 m
+  Median : 0.3600 m
+  Mean   : 2.3742 m
+  Std    : 4.4534 m
+
+Percentage-based accuracy:
+  Count  : 3
+  Min    : 0.40%
+  Max    : 95.00%
+  Median : 0.48%
+
+Accuracy by sensor type (distance, top 10):
+  GNSS/GPS                        n= 18  median=0.4300m  mean=2.6491m
+  IMU                             n= 14  median=0.5525m  mean=2.0041m
+  Camera                          n= 12  median=0.3145m  mean=1.1683m
+  LiDAR                           n=  8  median=0.1265m  mean=0.7476m
+  Radar                           n=  6  median=0.1705m  mean=0.4742m
+  WiFi                            n=  6  median=1.2600m  mean=3.1817m
+  BLE/Bluetooth                   n=  4  median=1.2600m  mean=1.4700m
+  UWB                             n=  4  median=0.3195m  mean=0.3332m
+  Monocular                       n=  4  median=0.3145m  mean=1.4597m
+  Ultrasonic                      n=  3  median=0.0890m  mean=3.4710m
+
+Accuracy by algorithm type (distance, top 10):
+  Deep Learning                   n=  7  median=0.1200m  mean=2.1493m
+  Particle Filter                 n=  5  median=3.0000m  mean=3.9194m
+  EKF                             n=  4  median=0.2968m  mean=0.6551m
+  Visual-Inertial Odometry        n=  4  median=0.4145m  mean=1.4772m
+  Visual Odometry                 n=  4  median=0.3950m  mean=1.5267m
+  Factor Graph                    n=  3  median=0.3290m  mean=0.2943m
+  VINS                            n=  1  median=0.3000m  mean=0.3000m
+  UKF                             n=  1  median=0.0270m  mean=0.0270m

@@ -1,0 +1,87 @@
+CHECKPOINT 1 — Data Cleaning Summary
+============================================================
+Date: 2026-07-12
+Raw CSV: export2026.07.12-04.50.12.csv
+Output: database_final.csv
+
+Total papers loaded:              1000
+Papers after year filter:         1000
+Duplicates removed (by DOI):      0
+Duplicates removed (by title):    0
+Papers dropped (no title/abs):    0
+Papers excluded by screening:     5
+─────────────────────────────────────────────
+FINAL paper count:                995
+Year range:                       2015–2026
+Top 10 Publication Venues:
+1. IEEE Transactions on Instrumentation and Measurement               (56)
+2. IEEE Robotics and Automation Letters                               (43)
+3. IEEE Sensors Journal                                               (41)
+4. IEEE Access                                                        (41)
+5. IEEE Internet of Things Journal                                    (25)
+6. IEEE Transactions on Intelligent Transportation Systems            (20)
+7. IEEE Transactions on Robotics                                      (15)
+8. IEEE Transactions on Industrial Electronics                        (13)
+9. IEEE Transactions on Mobile Computing                              (10)
+10. IEEE Transactions on Vehicular Technology                          (8)
+Missing Values Per Column:
+affiliations                   1  (0.1%)
+Date Added To Xplore           5  (0.5%)
+Volume                       607  (61.0%)
+Issue                        748  (75.2%)
+issn                         283  (28.4%)
+ISBNs                        379  (38.1%)
+doi                            4  (0.4%)
+funding                      527  (53.0%)
+author_keywords               66  (6.6%)
+ieee_terms                     2  (0.2%)
+mesh_terms                   994  (99.9%)
+Patent Citation Count        989  (99.4%)
+License                       62  (6.2%)
+Issue Date                     5  (0.5%)
+Meeting Date                 379  (38.1%)
+
+Columns in final dataset:
+  - title
+  - authors
+  - affiliations
+  - publication
+  - Date Added To Xplore
+  - year
+  - Volume
+  - Issue
+  - Start Page
+  - End Page
+  - abstract
+  - issn
+  - ISBNs
+  - doi
+  - funding
+  - PDF Link
+  - author_keywords
+  - ieee_terms
+  - mesh_terms
+  - citation_count
+  - Patent Citation Count
+  - reference_count
+  - License
+  - Online Date
+  - Issue Date
+  - Meeting Date
+  - publisher
+  - document_type
+  - text_corpus
+
+Year distribution:
+  2015: 24
+  2016: 33
+  2017: 33
+  2018: 51
+  2019: 81
+  2020: 72
+  2021: 63
+  2022: 72
+  2023: 108
+  2024: 136
+  2025: 225
+  2026: 97
