@@ -15,6 +15,7 @@ The pipeline processes **995 peer-reviewed publications** from IEEE Xplore, perf
 ├── LICENSE                                 # MIT Open-Science License file
 ├── requirements.txt                        # Pinned python dependencies
 ├── data/
+│   ├── data_dictionary.md                   # Column and metadata definitions for all datasets
 │   ├── raw/                                 # Original search engine exports
 │   │   └── export2026.07.12-04.50.12.csv    # Raw IEEE Xplore export (1,000 papers)
 │   └── processed/
