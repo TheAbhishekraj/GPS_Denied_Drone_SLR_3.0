@@ -22,6 +22,10 @@ import time
 import argparse
 from pathlib import Path
 
+# Fix Windows console encoding for Unicode output
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------

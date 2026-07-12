@@ -1,0 +1,29 @@
+name: Pipeline Verification & Reproducibility Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  verify-reproducibility:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11' # Stable target runtime
+
+    - name: Install Pinned Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Execute SLR Analysis Pipeline
+      run: |
+        python analysis/scripts/run_all.py

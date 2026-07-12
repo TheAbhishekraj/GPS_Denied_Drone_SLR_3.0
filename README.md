@@ -10,10 +10,12 @@ The pipeline processes **995 peer-reviewed publications** from IEEE Xplore, perf
 
 ```
 📁GPS_Denied_Drone_SLR 3.0/
-├── README.md                               # Project overview, how to reproduce (this file)
-├── requirements.txt                        # Python dependencies
+├── README.md                               # Project overview (this file)
+├── REPRODUCIBILITY.md                      # Detailed step-by-step replication protocol
+├── LICENSE                                 # MIT Open-Science License file
+├── requirements.txt                        # Pinned python dependencies
 ├── data/
-│   ├── raw/                                 # Original user files (CSV/Excel)
+│   ├── raw/                                 # Original search engine exports
 │   │   └── export2026.07.12-04.50.12.csv    # Raw IEEE Xplore export (1,000 papers)
 │   └── processed/
 │       ├── database_final.csv               # Cleaned dataset (995 papers)
@@ -30,12 +32,12 @@ The pipeline processes **995 peer-reviewed publications** from IEEE Xplore, perf
 │   │   └── run_all.py                       # Master orchestrator script
 │   └── output/
 │       ├── figures/                         # 12 high-resolution PNG figures (300 DPI)
-│       ├── report.md                        # Detailed analysis report
+│       ├── report.md                        # Compiled SLR metrics & statistical summaries
 │       └── tables.md                        # Clean tables for manuscript
 ├── references/
 │   ├── bibliography.txt                     # Numbered references (IEEE format)
 │   ├── references.bib                       # Standard BibTeX file
-│   └── key_papers.md                        # High-impact paper registry (463 papers)
+│   └── key_papers.md                        # Registry of 463 high-impact papers with citation counts
 ├── manuscript/
 │   ├── paper_final.md                       # Full review manuscript draft
 │   ├── cover_letter.md                      # Journal cover letter template
