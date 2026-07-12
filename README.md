@@ -1,4 +1,6 @@
 # GNSS-Denied Localization Systematic Literature Review Pipeline
+[![CI Status](https://github.com/TheAbhishekraj/GPS_Denied_Drone_SLR_3.0/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TheAbhishekraj/GPS_Denied_Drone_SLR_3.0/actions/workflows/reproduce.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
 This repository contains the complete, reproducible pipeline for the Systematic Literature Review (SLR) on **GNSS-Denied Localization for Autonomous Vehicles (2015–2026)**.
 
@@ -14,6 +16,8 @@ The pipeline processes **995 peer-reviewed publications** from IEEE Xplore, perf
 ├── REPRODUCIBILITY.md                      # Detailed step-by-step replication protocol
 ├── LICENSE                                 # MIT Open-Science License file
 ├── requirements.txt                        # Pinned python dependencies
+├── requirements-dev.txt                    # Python development dependencies (linting, testing)
+├── .pre-commit-config.yaml                 # pre-commit hooks configuration
 ├── data/
 │   ├── data_dictionary.md                   # Column and metadata definitions for all datasets
 │   ├── raw/                                 # Original search engine exports
@@ -65,10 +69,21 @@ Make sure Python 3.8+ is installed on your system. Install the required librarie
 pip install -r requirements.txt
 ```
 
+For development (testing, linting, pre-commit configuration):
+```bash
+pip install -r requirements-dev.txt
+```
+
 ### Running the Complete Pipeline
 You can re-run the entire pipeline from scratch with a single command:
 ```bash
 python analysis/scripts/run_all.py
+```
+
+### Containerized Replication (Docker)
+Alternatively, run the pipeline inside an isolated container with a single command:
+```bash
+docker build -t gps-slr . && docker run gps-slr
 ```
 
 ### Resuming or Running Specific Steps

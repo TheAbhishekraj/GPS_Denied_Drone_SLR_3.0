@@ -34,3 +34,23 @@ If you wish to add new keywords or modify classification criteria:
   sys.stdout.reconfigure(encoding="utf-8", errors="replace")
   ```
 - **Fenced Dictionaries:** Ensure all added regex boundaries use `\b` to prevent partial substring matches.
+
+---
+
+## 💻 Development Setup & Code Quality
+
+To set up your local workspace for development:
+
+1. Install development dependencies:
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+
+2. Install pre-commit hooks to automate code styling and whitespace formatting checkups:
+   ```bash
+   pip install pre-commit
+   pre-commit install
+   ```
+
+Now, whenever you perform a `git commit`, `black` and other style checkers will run automatically to keep the codebase clean.
+
