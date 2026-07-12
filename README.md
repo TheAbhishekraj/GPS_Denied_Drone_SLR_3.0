@@ -2,6 +2,8 @@
 [![CI Status](https://github.com/TheAbhishekraj/GPS_Denied_Drone_SLR_3.0/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TheAbhishekraj/GPS_Denied_Drone_SLR_3.0/actions/workflows/reproduce.yml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 
+> **The largest and most reproducible systematic literature review on GNSS-denied drone localization, covering 995 papers with a fully containerized, CI-tested analysis pipeline.**
+
 This repository contains the complete, reproducible pipeline for the Systematic Literature Review (SLR) on **GNSS-Denied Localization for Autonomous Vehicles (2015–2026)**.
 
 The pipeline processes **995 peer-reviewed publications** from IEEE Xplore, performs taxonomic classification, generates publication-ready figures/tables, extracts localization accuracy metrics, builds bibliographies, and compiles a complete manuscript draft.
